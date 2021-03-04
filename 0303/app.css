@@ -87,27 +87,138 @@ header{
     left: 0;
     top: 0;
 }
+.ment{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    color: #f2f2f2;
+    font: 42px Calibri, sans-serif;
 
+}
 .contents {
-    height: 200px;
+    padding-top: 20px;
+    height: 180px;
     display: flex;
     justify-content: space-between;
 }
 .banner{
     display: grid;
-    margin-top: 50px;
+    margin-top: 30px;
     height: 100px;
     grid-template-columns: 50% 50%;
 }
 .links{
-    padding-top: 10px;
     display: grid;
     grid-template-columns: 300px;
-    grid-auto-rows: 40px;
+    grid-auto-rows: 30px;
+    row-gap: 10px;
 }
 .links > a {
-    margin-top: 10px;
     line-height: 30px;
     background-color: lightgray;
     text-align: center;
+}
+
+/*notice*/
+.notice{
+    position: relative;
+    width: 400px;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+}
+
+.tabs > div{
+    padding: 8px 12px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid gray;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.news, .gallery{
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: lightgray;
+}
+
+.news{
+    z-index: 2;
+}
+
+.gallery{
+    padding: 10px 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.news > ul{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em;
+}
+
+.pop{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.pop_card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    line-height: 50px;
+    padding: 1.5em;
+}
+
+.close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 10em;
+    text-align: center;
+    line-height: 30px;  
+    cursor: pointer;
+}
+
+.on{
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    height: 100px;
+    width: 100%;
+}
+
+.footer_ment{
+    width: 600px;
+    line-height: 100px;
+}
+
+footer > .logo {
+    margin: 30px 40px;
 }
