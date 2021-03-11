@@ -45,20 +45,29 @@ header > img {
     color: white;
 }
 .sub_menu{
-    display: grid;
+    position: relative;
+    width: 100%;
+    display: flex;
     background-color: white;
     border: 0.5px solid gray;
-    grid-template-columns: 25% 25% 25% 25%;
 }
 .sub_menu > li{
-    width: 100%;
-    height: 150px;
-    line-height: 50px;
-    text-align: center;
+    position: absolute;
+    background: #fff;
 }
+
+.sub_menu > li:nth-child(1) {left: 0;}
+.sub_menu > li:nth-child(2) {left: 25%;}
+.sub_menu > li:nth-child(3) {left: 50%;}
+.sub_menu > li:nth-child(4) {left: 75%;}
+
 .sub_menu > li > ul > li{
     cursor: pointer;
-    transition: 0.1s;
+    width: 162.5px;    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sub_menu > li > ul > li:hover{
     background-color: lightgray;
