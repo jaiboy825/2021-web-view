@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    color: #222328;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+
+header {
+    padding-right: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+    object-fit: cover;
+    
+}
+
+.menu {
+    margin-top: 50px;
+    width: 700px;
+    height: 50px;
+}
+
+.main_menu {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_menu>li {
+    width: 25%;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.main_menu>li:hover {
+    color: white;
+    background-color: gray;
+}
+
+.sub_menu {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    padding-left: 470px;
+    padding-right: 30px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightslategray;
+}
+
+.sub_menu>li {
+    width: 100%;
+}
+
+.sub_menu>li>ul>li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: lightslategray;
+}
+
+.sub_menu>li>ul>li:hover {
+    background-color: slategray;
+    color: white;
+}
+
+
+/*slider*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slider>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font: 40px Calibri, sans-serif;
+    text-align: center;
+    line-height: 300px;
+}
+
+
+/*content*/
+
+.content {
+    position: relative;
+    height: 200px;
+    display: flex;
+}
+
+.notice,
+.gallery,
+.banner {
+    position: relative;
+    width: 400px;
+    height: 100%;
+}
+
+.notice_head,
+.gallery_head {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 20px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+.notice_body,
+.gallery_body {
+    position: absolute;
+    z-index: 1;
+    top: 29px;
+    width: 100%;
+    height: 170px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.notice_body {
+    border-right: none;
+}
+
+.notice_body>table {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+}
+
+.notice_body>table>tr {
+    width: 100%;
+}
+
+.notice_body>table>tr>td {
+    width: 100%;
+}
+
+.gallery_body {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px;
+    padding: 35px 0px;
+    justify-content: space-around;
+}
+
+.gallery_body>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner {
+    padding: 5px 5px;
+    display: grid;
+    row-gap: 10px;
+}
+
+.ban {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.ban>img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font: 30px Calibri, sans-serif;
+    line-height: 50px;
+    color: white;
+}
+
+
+/*popup*/
+
+.pop {
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.popUp {
+    position: absolute;
+    z-index: 31;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+    padding: 0.5em;
+}
+
+.popUp>button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+}
+
+.f1 {
+    width: 800px;
+}
+
+.fm,
+.copy {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.fm>a {
+    color: white;
+}
+
+.f2 {
+    width: 400px;
+    line-height: 33px;
+    text-align: center;
+    color: white;
+}
