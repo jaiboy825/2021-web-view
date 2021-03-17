@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*헤더*/
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+}
+
+.menu {
+  z-index: 30;
+  margin: 25px 20px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.menu>li {
+  width: 25%;
+  line-height: 50px;
+  background-color: lightgray;
+}
+
+.menu>li:hover {
+  background-color: gray;
+  color: white;
+}
+
+.menu>li>ul>li {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: lightslategray;
+}
+
+.menu>li>ul>li:hover {
+  background-color: lightgray;
+}
+
+/*slider*/
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.slider>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*content*/
+
+.content {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
+/*tab*/
+
+.tab {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tab_menu {
+  margin-left: 10px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+
+.tab_menu>div {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid gray;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.tab_menu>div.active {
+  background-color: white;
+  margin-top: 1px;
+  z-index: 3;
+  border-bottom: 0;
+}
+
+.tab_content {
+  position: relative;
+}
+
+.tab_content>div {
+  background-color: white;
+  width: 100%;
+  height: 170px;
+  position: absolute;
+  border: 1px solid gray;
+}
+
+.notice {
+  z-index: 2;
+}
+
+.notice>table {
+  width: 100%;
+  height: 100%;
+  padding: 0.25em;
+}
+
+.gallery {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: space-around;
+  grid-template-rows: 100px;
+  padding: 35px 0px;
+}
+.gallery > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*banner*/
+.banner {
+  width: 100%;
+  height: 100%;
+
+  display: grid;  
+  grid-template-columns: 95%;
+  grid-auto-rows: 40px;
+  row-gap: 10px;
+}
+.banner > img {
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link{
+  width: 100%;
+  height: 100%;
+  display: grid;  
+  grid-template-columns: 180px 180px;
+  justify-content: space-around;
+  grid-template-rows: 30px 30px;
+  padding: 50px 0px;
+  row-gap: 40px;
+  
+}
+.link > a > div {
+  width: 100%;
+  height: 100%;
+  background-color: lightslategrey;
+  border-radius: 0.25em;
+  color: #f2f2f2;
+  text-align: center;
+  line-height: 30px;
+}
+/*footer*/
+footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: lightgray;
+}
+.footer > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.footer_right {
+  width: calc(100% - 100px);
+  line-height: 50px;
+}
+.frm {
+  width: 100%;
+  text-align: center;
+}
+
+.copy{
+  text-align: center;
+}
+
+/*pop*/
+.pop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup{
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  padding: 20px 30px;
+  line-height: 30px;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.popup > button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}

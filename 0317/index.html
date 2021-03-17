@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="app.css" />
+  <script src="jquery-3.3.1.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <div class="pop">
+    <div class="popup">
+      <p>2020년도 JUST쇼핑몰의 야심작 <br> 꿈의 여행에 대한 론칭 패션쇼를 기념하여 <br> 4월 한달 특별 할인 이벤트를 진행합니다.</p>
+      <p>고객님들의 많은 성원과 관심 부탁드립니다.</p>
+      <button onclick="closePop()">닫기</button>
+    </div>
+  </div>
+  <div class="container">
+    <header>
+      <img src="images/logo1.png" alt="" class="logo" />
+      <ul class="menu">
+        <li>
+          강원천문대
+          <ul>
+            <li>천문대소개</li>
+            <li>인사말</li>
+            <li>오시는길</li>
+          </ul>
+        </li>
+        <li>
+          이용안내
+          <ul>
+            <li>프로그램</li>
+            <li>관람시간표</li>
+            <li>이달의 별자리</li>
+          </ul>
+        </li>
+        <li>
+          천문대예약
+          <ul>
+            <li>예약하기</li>
+            <li>예약확인</li>
+            <li>예약취소</li>
+          </ul>
+        </li>
+        <li>
+          커뮤니티
+          <ul>
+            <li>공지사항</li>
+            <li>방문후기</li>
+            <li>자유게시판</li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <div class="slider">
+      <img src="images/slideimg1.jpg" alt="" />
+      <img src="images/slideimg2.jpg" alt="" />
+      <img src="images/slideimg3.jpg" alt="" />
+    </div>
+    <div class="content">
+      <div class="tab">
+        <div class="tab_menu">
+          <div class="notice_tab active">공지사항</div>
+          <div class="gallery_tab">갤러리</div>
+        </div>
+        <div class="tab_content">
+          <div class="notice">
+            <table>
+              <tr>
+                <td><a href="javascript:openPop()">2020 론칭기념 특별 할인 이벤트</a></td>
+                <td>2020-04-08</td>
+              </tr>
+              <tr>
+                <td>논현동 쇼룸4월 휴무 안내</td>
+                <td>2020-04-07</td>
+              </tr>
+              <tr>
+                <td>2020 코엑스 패션박람회 안내</td>
+                <td>2020-04-06</td>
+              </tr>
+              <tr>
+                <td>상반기 이벤트 안내</td>
+                <td>2020-04-05</td>
+              </tr>
+            </table>
+          </div>
+          <div class="gallery">
+            <img src="images/g1.jpeg" alt="">
+            <img src="images/g2.jpeg" alt="">
+            <img src="images/g3.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="images/b1.png" alt="">
+        <img src="images/b2.png" alt="">
+        <img src="images/b3.png" alt="">
+        <img src="images/b4.png" alt="">
+      </div>
+      <div class="link">
+        <a href=""><div>스폰서1</div></a>
+        <a href=""><div>스폰서2</div></a>
+        <a href=""><div>스폰서3</div></a>
+        <a href=""><div>스폰서4</div></a>
+      </div>
+    </div>
+    <footer>
+      <img src="images/logo2.png" alt="">
+      <div class="footer_right">
+        <div class="frm"><a href="#">facebook</a> | <a href="#">instagram</a> | <a href="#">twitter</a></div>
+        <div class="copy">Copyright 2019 JUST쇼핑몰 All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
