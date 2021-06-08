@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="pop">
+        <h3>예술의전당 대학 가곡축제</h3>
+        <br>
+        <p>예술의전당은 우리말 가곡에 대해 국민적 관심을 도모하고 <br> 성악을 전공하는 학생들에게 특별한 무대 경험을 제공하는 2021 대학가곡축제를 개최합니다.</p>
+        <p>참여자 전원에게는 공연 준비를 위한 멘토링이 제공되며, 참신한 아이디어로 우리가곡을 <br> 선보이는 개인과 단체에게는 공연 결과에 따라 예술의전당 기획 공연의 출연 기회가 주어집니다.</p>
+        <br>
+        <p>많은 관심과 참여 부탁드립니다.</p>
+        <button onclick="closePop()">닫기 x</button>
+    </div>
+    <div class="container">
+        <header class="a_section">
+            <a href="#"><img src="Header/logo.png" alt="로고" class="logo"></a>
+
+            <ul class="menu">
+                <li>
+                    <div class="main_menu"><a href="#">소장처별</a></div>
+                    <ul>
+                        <li><a href="#">한국</a></li>
+                        <li><a href="#">프랑스</a></li>
+                        <li><a href="#">이탈리아</a></li>
+                        <li><a href="#">독일</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="main_menu"><a href="#">장르별</a></div>
+                    <ul>
+                        <li><a href="#">회화</a></li>
+                        <li><a href="#">판화</a></li>
+                        <li><a href="#">공예/고대유물</a></li>
+                        <li><a href="#">그 외</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="main_menu"><a href="#">테마별</a></div>
+                    <ul>
+                        <li><a href="#">초상화/인물</a></li>
+                        <li><a href="#">종교</a></li>
+                        <li><a href="#">신화/문학</a></li>
+                        <li><a href="#">일상/스포츠</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="main_menu"><a href="#">시대별</a></div>
+                    <ul>
+                        <li><a href="#">1900년이전</a></li>
+                        <li><a href="#">1900년대</a></li>
+                        <li><a href="#">현대</a></li>
+                        <li><a href="#">그 외</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </header>
+        <div class="b_section">
+            <img src="slide/slide1.png" alt="슬라이드이미지1">
+            <img src="slide/slide2.png" alt="슬라이드이미지2">
+            <img src="slide/slide3.png" alt="슬라이드이미지3">
+        </div>
+        <div class="c_section">
+            <div class="notice">
+                <div class="notice_head">공지사항</div>
+                <div class="notice_body">
+                    <ul>
+                        <li><a href="javascript:openPop()">2021 예술의전당 대학가곡축제 참여자 모집 공고</a></li>
+                        <li>2021-05-20</li>
+                    </ul>
+                    <ul>
+                        <li>고객안내서비스 "챗봇" 이용 안내 </li>
+                        <li>2021-05-18</li>
+                    </ul>
+                    <ul>
+                        <li>예술의전당 하우스 어텐던트 67기 모집</li>
+                        <li>2021-04-20</li>
+                    </ul>
+                    <ul>
+                        <li>사회적 거리두기 2단계 예술의전당 이용 안내</li>
+                        <li>2021-04-01</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="gallery_head">갤러리</div>
+                <div class="gallery_body">
+                    <a href="#"><img src="contents/gallery1.jpg" alt="갤러리이미지1"></a>
+                    <a href="#"><img src="contents/gallery2.jpg" alt="갤러리이미지2"></a>
+                    <a href="#"><img src="contents/gallery3.jpg" alt="갤러리이미지3"></a>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#">
+                    <div class="banner_box">
+                        <img src="contents/banner1.png" alt="배너이미지1">
+                        <h4>공연/전시</h4>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="banner_box">
+                        <img src="contents/banner2.png" alt="배너이미지2">
+                        <h4>음악분수</h4>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="banner_box">
+                        <img src="contents/banner3.png" alt="배너이미지3">
+                        <h4>이벤트</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer class="d_section">
+            <a href="#"><img src="Header/logo.png" alt="로고"></a>
+            <div class="copyright">
+                copyrightⓒ2020 Seoul Arts Center. All rights Reserved.
+            </div>
+            <div class="sns">
+                <a href="#">페이스북</a>
+                <a href="#">인스타그램</a>
+                <a href="#">유튜브</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
